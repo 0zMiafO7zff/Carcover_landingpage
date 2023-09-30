@@ -577,6 +577,9 @@ header {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
 }
 
+.map-location-small {
+    display: none;
+}
 /* RESPONSIVE MAP */
 
 @media screen and (max-width:1280px) {
@@ -637,6 +640,16 @@ header {
     }
 }
 
+@media screen and (max-width:450px) {
+    .map-location {
+        display: none;
+    }
+    .map-location-small {
+        display: block;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    }
+}
 
 
 
