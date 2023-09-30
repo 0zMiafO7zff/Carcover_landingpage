@@ -252,6 +252,15 @@ header {
     }
 }
 
+@media screen and (max-width:630px) {
+    .whyus-box {
+        padding: 0 2rem;
+    }
+
+    .whyus-box {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
 
 /* RESPONSIVE WHYUS */
 /* ################################################### WHY US ################################################### */
@@ -492,6 +501,9 @@ header {
     .send-box-text-text {
         margin-right: .5rem;
     }
+    .line-send {
+        width: 40%;
+    }
 }
 
 @media screen and (max-width:540px) {
@@ -624,6 +636,10 @@ header {
         width: auto;
     }
 }
+
+
+
+
 
 /* RESPONSIVE MAP */
 
