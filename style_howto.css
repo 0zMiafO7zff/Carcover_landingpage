@@ -86,7 +86,7 @@ nav {
 }
 
 .nav-item ul li a:hover {
-    color: rgb(245, 139, 137);
+    color: rgb(150, 150, 150);
     transition: .2s;
 }
 
@@ -100,8 +100,8 @@ nav {
 .nav-toggle {
     position: sticky;
     top: 25px;
-    text-align: right;
-    margin-right: 25px;
+    left: 25px;
+    width: 30px;
     font-size: 30px;
     color: #333;
     cursor: pointer;
@@ -114,7 +114,7 @@ nav {
 .nav-toggle-exit {
     position: absolute;
     top: 25px;
-    right: 25px;
+    left: 25px;
     font-size: 34px;
     color: rgb(255, 255, 255);
     cursor: pointer;
