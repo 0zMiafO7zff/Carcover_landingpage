@@ -1,0 +1,838 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+@media screen and (max-width:780px) {
+    html {
+        margin-top: -7rem;
+    }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* background-color: #e54a4a; */
+}
+
+/* RESPONSIVE CONTAINER */
+
+@media screen and (max-width:1280px) {
+    .container {
+        max-width: 1000px;
+    }
+} 
+
+@media screen and (max-width:1024px) {
+    .container {
+        max-width: 800px;
+    }
+} 
+
+@media screen and (max-width:840px) {
+    .container {
+        max-width: 750px;
+    }
+} 
+@media screen and (max-width:780px) {
+    .container {
+        max-width: 600px;
+    }
+} 
+
+/* RESPONSIVE CONTAINER */
+/* ################################################### NAVBAR ################################################### */
+nav {
+    background-color: rgb(51, 51, 51);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+    transition: top 0.5s;
+
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+}
+
+.nav-item ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-item ul li a {
+    text-decoration: none;
+    color: white;
+    margin: 0 1.5rem;
+    font-size: 18px;
+}
+
+.nav-item ul li a:hover {
+    color: rgb(245, 139, 137);
+    transition: .2s;
+}
+
+.nav-logo {
+    font-size: 22px;
+    user-select: none;
+}
+
+/* RESPONSIVE NAVBAR */
+
+.nav-toggle {
+    position: sticky;
+    top: 25px;
+    text-align: right;
+    margin-right: 25px;
+    font-size: 30px;
+    color: #333;
+    cursor: pointer;
+    display: none;
+    z-index: 1;
+    user-select: none;
+    cursor: pointer;
+}
+
+.nav-toggle-exit {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 34px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: none;
+    z-index: 200;
+    user-select: none;
+}
+
+@media screen and (max-width:780px) {
+
+    nav {
+        height:100%;
+        width: 40%;
+        right: 0;
+        box-shadow: none;
+        background-color: rgba(51, 51, 51, 0.95);
+        display: none;
+    }
+
+    .nav-list {
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+        margin-top: 8rem;
+        text-align: center;
+
+    }
+
+    .nav-logo {
+        font-size: 1.8rem;
+        margin-bottom: 4.5rem;
+    }
+
+    .nav-item ul{
+        flex-direction: column;
+        line-height: 4;
+    }
+
+    .nav-item ul li a{
+        font-size: 1.2rem;
+    }
+
+    .active {
+        display: block;
+    }
+
+    .active-none {
+        display: none;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+    
+}
+
+/* RESPONSIVE NAVBAR */
+/* ################################################### NAVBAR ################################################### */
+
+/* ################################################### HEADER ################################################### */
+
+header {
+    margin: 2rem 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 4rem;
+}
+
+.banner {
+    height: 400px;
+}
+/* ################################################### HEADER ################################################### */
+
+/* ################################################### WHY US ################################################### */
+
+.whyus {
+    margin: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid #000; */
+}
+
+.section-head {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 1rem;
+    color: rgb(236, 4, 4);
+}
+
+.line {
+    background-color: #333;
+    margin: 4rem auto;
+    width: 200px;
+    height: 5px;
+    user-select: none;
+}
+
+.whyus-box {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 10px;
+    padding: 0 10rem;
+
+}
+
+.whyus-list {
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+}
+
+.whyus-list-head {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.whyus-text {
+    color: #5e5e5e;
+    font-size: 16px;
+}
+
+/* RESPONSIVE WHYUS */
+
+
+@media screen and (max-width:1024px) {
+    .whyus-box {
+        padding: 0 6rem;
+    }
+}
+
+@media screen and (max-width:840px) {
+    .whyus-box {
+        padding: 0 4rem;
+    }
+}
+
+@media screen and (max-width:780px) {
+    .whyus-box {
+        padding: 0 2rem;
+    }
+}
+
+
+/* RESPONSIVE WHYUS */
+/* ################################################### WHY US ################################################### */
+
+
+/* ################################################### PRODUCT ################################################### */
+
+.product {
+    margin: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    background-image: url('https://images.unsplash.com/photo-1599721489452-b71f4375428b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2139&q=80');
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.7);
+    color: white;
+    font-weight: lighter;
+}
+
+.product-head {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 1rem;
+    margin-top: 4rem;
+    color: rgb(255, 255, 255);
+}
+
+.product-line {
+    background-color: #ffffff;
+    margin: 4rem auto;
+    width: 200px;
+    height: 5px;
+    user-select: none;
+}
+
+.product-box {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 4rem;
+    /* border: 1px solid #ee0000; */
+}
+
+.product-list {
+    margin-bottom: 4rem;
+}
+
+.product-show {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1rem;
+}
+
+.product-info {
+    margin-top: 3.5rem;
+    padding-left: .5rem;
+}
+
+.product-img img {
+    border-radius: 10px;
+}
+.product-info h1 {
+    font-size: 18px;
+}
+
+.product-info h2 {
+    margin-top: 1rem;
+    font-size: 16px;
+}
+
+.product-text {
+    /* border: 1px solid #e91515; */
+    margin: 1rem 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.product-text p a {
+    font-size: 14px;
+    text-decoration: none;
+    background-color: transparent;
+    border: 2px solid #f8690a;
+    padding: 10px;
+    border-radius: 25px;
+    color: #f8690a;
+}
+
+.product-text p a:hover {
+    border: 2px solid #f8690a; 
+    background-color: #f8690a;
+    color: white;
+    transition: .2s;
+}
+
+.product-btn {
+    margin-top: 1rem;
+    text-align: end;
+}
+
+/* RESPONSIVE PRODUCT */
+
+@media screen and (max-width: 840px) {
+    .product-box {
+        grid-template-columns: repeat(1,1fr);
+        padding: 1rem 5rem;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .product-box {
+        grid-template-columns: repeat(1,1fr);
+        padding: 1.5rem 2rem;
+    }
+}
+
+/* RESPONSIVE PRODUCT */
+/* ################################################### PRODUCT ################################################### */
+
+/* ################################################### REVIEW ################################################### */
+
+.review {
+    margin: 4rem 0;
+}
+.review-box {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    grid-gap: 4rem;
+    padding: 2rem 8rem;
+}   
+
+.review-list {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+}
+.review-img, .review-img img {
+    width: 100%; /* กำหนดความกว้างของรูปภาพให้เต็มกล่อง */
+    height: 100%; /* กำหนดความสูงของรูปภาพให้เต็มกล่อง */
+    object-fit: cover; /* ทำให้รูปภาพเต็มกล่องและไม่ตัดขอบ */
+    border-radius: 15px;
+}
+
+/* RESPONSIVE REVIEW */
+
+@media screen and (max-width:1024px) {
+    .review-box {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (max-width:780px) {
+    .review-box {
+        padding: 2rem 4rem;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .review-box {
+        grid-template-columns: repeat(1,1fr);
+        padding: 3rem 6rem;
+    }
+}
+
+/* RESPONSIVE REVIEW */
+/* ################################################### REVIEW ################################################### */
+
+/* ################################################### SEND PRODUCT ################################################### */
+
+.sendproduct {
+    margin: 4rem 0;
+}
+
+.send-box-head {
+    background-color: #f8690a;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: .5rem;
+    border-radius: 15px 15px 0px 0px;
+    margin-bottom: 1rem;
+}
+
+.send-box-text {
+    display: flex;
+    padding: .5rem 1rem;
+    justify-content: center;
+    font-size: 18px;
+    margin: 0 auto;
+    grid-gap: 1rem;
+}
+
+.send-box-bio {
+    padding:0 1rem;
+    text-align: center;
+    font-size: 18px;
+}
+
+.line-send {
+    background-color: #f8690a;
+    margin: 1rem auto;
+    width: 600px;
+    height: 2px;
+    user-select: none;
+}
+
+.send-box-text-text {
+    margin-right: 1rem;
+    justify-content: center;
+}
+
+.send-box-text-item-1 p{
+    background: rgb(4, 244, 152);
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 12px;
+    padding: 4px 20px;
+}
+
+.send-box-text-item-2 p{
+    background: gold;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 12px;
+    padding: 4px 20px;
+    margin-bottom: 1rem;
+}
+
+.send-box-img img {
+    border-radius: 0px 0px 15px 15px;
+}
+
+/* RESPONSIVE SEND PRODUCT */
+
+@media screen and (max-width:840px) {
+    .send-box-text-text {
+        margin-right: .5rem;
+    }
+}
+
+@media screen and (max-width:540px) {
+    .send-box-head {
+        font-size: 1.2rem;
+    }
+
+    .send-box-text {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .send-box-text-text {
+        margin-right: 0;
+    }
+    
+}
+
+/* RESPONSIVE SEND PRODUCT */
+
+/* ################################################### SEND PRODUCT ################################################### */
+
+/* ################################################### MAP ################################################### */
+
+.map {
+    margin: 4rem 0;
+}
+
+.map-box {
+    /* border: 1px solid #000; */
+    display: flex;
+}
+
+.map-info {
+    padding: 1rem;
+    margin: auto 1rem;
+}
+
+.map-info p {
+    font-size: 18px;
+    margin: 2rem 0;
+}
+
+.map-info i {
+    font-size: 22px;
+}
+
+.map-info p a {
+    text-decoration: none;
+    color: green;
+}
+.map-line {
+    background-color: hwb(0 84% 16%);
+    width: 5px;
+    margin: 0 3.5rem;
+    user-select: none;
+}
+
+.map-info-line {
+    background-color: #e6e5e4;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 0 4rem;
+    width: auto;
+    height: 2px;
+    user-select: none;
+}
+
+.map-location iframe{
+    border-radius: 15px;
+    /* border: 1px solid #000; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+}
+
+/* RESPONSIVE MAP */
+
+@media screen and (max-width:1280px) {
+
+    .map-info-line {
+        margin: 0 2rem;
+    }
+
+    .map-location iframe {
+        width: 450px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+
+    .map-info-line {
+        margin: 0;
+    }
+
+    .map-info {
+        padding: .5rem;
+        margin: auto .5rem;
+    }
+    
+    .map-info p {
+        font-size: 16px;
+    }
+
+    .map-location iframe {
+        width: 300px;
+    }
+
+    .map-line {
+        background-color: hwb(0 84% 16%);
+        width: 5px;
+        margin: 0 1.5rem;
+        user-select: none;
+    }
+
+    .map-location , .map-location iframe{
+        width: 400px;
+    }
+
+}
+
+@media screen and (max-width:780px) {
+
+    .map-box {
+        flex-direction: column;
+        padding: 0 4rem;
+        text-align: center;
+    }
+
+    .map-location {
+        margin-top: 1.5rem;
+        margin-bottom: 4rem;
+        width: auto;
+    }
+}
+
+/* RESPONSIVE MAP */
+
+/* ################################################### MAP ################################################### */
+
+
+/* ################################################### MAP ################################################### */
+.video {
+    margin: 4rem 0;
+}
+
+.video-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.video-list {
+    display: flex;
+    margin-bottom: 2rem;
+    height: 300px;
+}
+
+.video-line {
+    background-color: hwb(0 84% 16%);
+    width: 5px;
+    margin: 0 2rem;
+    user-select: none;
+}
+
+.video-cilp {
+    width: 100%;
+}
+/* RESPONSIVE VIDEO */
+
+
+@media screen and (max-width:480px) {
+
+
+    .map-location , .map-location iframe {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width:540px) {
+
+    .video-box {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding-bottom: 6rem;
+        margin-top: -6rem;
+    }
+
+    .video-list {
+        flex-direction: column;
+        padding: 4rem;
+        margin: 3rem 0;
+    }
+
+    .video-cilp {
+        margin: 1rem 0;
+    }
+}
+
+/* RESPONSIVE VIDEO */
+/* ################################################### MAP ################################################### */
+
+/* ################################################### FOOTER ################################################### */
+
+.footer {
+    background-color: #333;
+    padding: 1rem;
+    font-weight: lighter;
+    color: white;
+}
+
+.footer-box {
+    /* border: 1px solid #f82c2c; */
+    display: flex;
+}
+
+.footer-info {
+    /* border: 1px solid #000; */
+    padding: .5rem;
+    width: 40%;
+    margin-right: auto;
+}
+.footer-info h1{
+    font-size: 28px;
+    margin-bottom: 1rem;
+}
+.footer-info h3{
+    letter-spacing: 4px;
+    margin-bottom: 1rem;
+}
+.footer-text {
+    margin: auto 0;
+    /* border: 1px solid #ffffff; */
+    font-size: 18px;
+    margin-right: auto;
+    padding-top: 1rem;
+}
+
+.footer-text p i {
+    font-size: 22px;
+}
+.footer-text p{
+    margin-bottom: 1rem;
+}
+.footer-text p a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-qrcode {
+    text-align: center;
+}
+
+.footer-qrcode p {
+    margin-bottom: .5rem;
+}
+
+.footer-qrcode img {
+    width: 150px;
+}
+
+
+/*  RESPONSIVE FOOTER */
+
+@media screen and (max-width:1024px) {
+
+    .footer-info p {
+        font-size: 14px;
+    }
+
+    .footer-text p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:840px) {
+
+    .footer-info p {
+        font-size: 12px;
+    }
+
+    .footer-text p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:540px) {
+
+    .footer-box {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .footer-info {
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+        width: 80%;
+    }
+
+    .footer-text {
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+    }
+
+    .footer-info p {
+        font-size: 16px;
+    }
+
+    .footer-text p {
+        font-size: 16px;
+    }
+
+    .footer-qrcode {
+        margin-bottom: 3rem;
+    }
+}
+/*  RESPONSIVE FOOTER */
+
+/* ################################################### FOOTER ################################################### */
+
+/* ################################################### BTN ONTOP ################################################### */
+.scrollTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 10px 18px;
+    background-color: red;
+    color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+    opacity: 0;
+
+}
+
+/* RESPONSIVE BTN ONTOP */
+@media screen and (max-width:780px) {
+    .scrollTop {
+        left: 30px;
+        width: 54px;
+    }
+}
+/* RESPONSIVE BTN ONTOP */
+/* ################################################### BTN ONTOP ################################################### */
+

@@ -1,0 +1,447 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+@media screen and (max-width:780px) {
+    html {
+        margin-top: -7rem;
+    }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* RESPONSIVE CONTAINER */
+
+@media screen and (max-width:1280px) {
+    .container {
+        max-width: 1000px;
+    }
+} 
+
+@media screen and (max-width:1024px) {
+    .container {
+        max-width: 800px;
+    }
+} 
+
+@media screen and (max-width:840px) {
+    .container {
+        max-width: 750px;
+    }
+} 
+@media screen and (max-width:780px) {
+    .container {
+        max-width: 600px;
+    }
+} 
+
+@media screen and (max-width:630px) {
+    .container {
+        max-width: 480px;
+    }
+} 
+
+/* RESPONSIVE CONTAINER */
+/* ################################################### NAVBAR ################################################### */
+nav {
+    background-color: rgb(51, 51, 51);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+    transition: top 0.5s;
+
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+}
+
+.nav-item ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-item ul li a {
+    text-decoration: none;
+    color: white;
+    margin: 0 1.5rem;
+    font-size: 18px;
+}
+
+.nav-item ul li a:hover {
+    color: rgb(245, 139, 137);
+    transition: .2s;
+}
+
+.nav-logo {
+    font-size: 22px;
+    user-select: none;
+}
+
+/* RESPONSIVE NAVBAR */
+
+.nav-toggle {
+    position: sticky;
+    top: 25px;
+    text-align: right;
+    margin-right: 25px;
+    font-size: 30px;
+    color: #333;
+    cursor: pointer;
+    display: none;
+    z-index: 1;
+    user-select: none;
+    cursor: pointer;
+}
+
+.nav-toggle-exit {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 34px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: none;
+    z-index: 200;
+    user-select: none;
+}
+
+@media screen and (max-width:780px) {
+
+    nav {
+        height:100%;
+        width: 40%;
+        right: 0;
+        box-shadow: none;
+        background-color: rgba(51, 51, 51, 0.95);
+        display: none;
+    }
+
+    .nav-list {
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+        margin-top: 8rem;
+        text-align: center;
+
+    }
+
+    .nav-logo {
+        font-size: 1.8rem;
+        margin-bottom: 4.5rem;
+    }
+
+    .nav-item ul{
+        flex-direction: column;
+        line-height: 4;
+    }
+
+    .nav-item ul li a{
+        font-size: 1.2rem;
+    }
+
+    .active {
+        display: block;
+    }
+
+    .active-none {
+        display: none;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+    
+}
+
+/* RESPONSIVE NAVBAR */
+/* ################################################### NAVBAR ################################################### */
+
+/* ################################################### HEADER ################################################### */
+
+header {
+    margin-top: 60px;
+}
+
+.banner {
+    height: 400px;
+}
+
+/* ################################################### HEADER ################################################### */
+
+/* ################################################### CONTACT ################################################### */
+.contact {
+    position: relative;
+}
+.contact-box {
+    background-color: white;
+    position: relative;
+    top: -100px;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding-bottom: 4rem;
+}
+
+.contact-head {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 22px;
+}
+.contact-line {
+    background-color: #333;
+    margin: 2rem auto;
+    width: 200px;
+    height: 5px;
+    user-select: none;
+}
+
+.contact-info {
+    text-align: center;
+    font-size: 20px;
+    margin: 3rem 0;
+    padding: 0 1rem;
+    margin-bottom: 4rem;
+}
+
+.contact-list {
+    /* background-color: #ccc; */
+    display: flex;
+    justify-content: center;
+}
+
+.contact-list-line {
+    background-color: hwb(0 84% 16%);
+    width: 5px;
+    margin: 0 7rem;
+    user-select: none;
+}
+
+.contact-contact {
+    padding: 1rem;
+}
+
+.contact-contact a {
+    text-decoration: none;
+    color: black;
+}
+
+.contact-contact i {
+    font-size: 1.75rem;
+    margin-right: .5rem;
+}
+
+.contact-contact h1 {
+    margin-bottom: 1rem;
+}
+
+.contact-contact p {
+    margin: 2rem 0;
+    font-size: 20px;
+    align-items: center;
+
+    display: flex;
+}
+
+.contact-img {
+    text-align: center;
+    /* border:  solid #000; */
+    
+}
+
+.review-head {
+    margin-bottom: 1rem;
+    font-size: 20px;
+}
+.review-img img{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (max-width:1024px) {
+
+    .contact-contact {
+        text-align: center;
+    }
+
+    .contact-list {
+        flex-direction: column;
+    }
+    .contact-img {
+        margin-top: 4rem;
+    }
+
+    .review-img {
+        width: 40%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:630px) {
+    .review-img {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+/* ################################################### CONTACT ################################################### */
+
+/* ################################################### FOOTER ################################################### */
+
+.footer {
+    background-color: #333;
+    padding: 1rem;
+    font-weight: lighter;
+    color: white;
+}
+
+.footer-box {
+    /* border: 1px solid #f82c2c; */
+    display: flex;
+}
+
+.footer-info {
+    /* border: 1px solid #000; */
+    padding: .5rem;
+    width: 40%;
+    margin-right: auto;
+}
+.footer-info h1{
+    font-size: 28px;
+    margin-bottom: 1rem;
+}
+.footer-info h3{
+    letter-spacing: 4px;
+    margin-bottom: 1rem;
+}
+.footer-text {
+    margin: auto 0;
+    /* border: 1px solid #ffffff; */
+    font-size: 18px;
+    margin-right: auto;
+    padding-top: 1rem;
+}
+
+.footer-text p i {
+    font-size: 22px;
+}
+.footer-text p{
+    margin-bottom: 1rem;
+}
+.footer-text p a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-qrcode {
+    text-align: center;
+}
+
+.footer-qrcode p {
+    margin-bottom: .5rem;
+}
+
+.footer-qrcode img {
+    width: 150px;
+}
+
+/*  RESPONSIVE FOOTER */
+
+@media screen and (max-width:1024px) {
+
+    .footer-info p {
+        font-size: 14px;
+    }
+
+    .footer-text p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:840px) {
+
+    .footer-info p {
+        font-size: 12px;
+    }
+
+    .footer-text p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:540px) {
+
+    .footer-box {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .footer-info {
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+        width: 80%;
+    }
+
+    .footer-text {
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+    }
+
+    .footer-info p {
+        font-size: 16px;
+    }
+
+    .footer-text p {
+        font-size: 16px;
+    }
+
+    .footer-qrcode {
+        margin-bottom: 3rem;
+    }
+}
+/*  RESPONSIVE FOOTER */
+/* ################################################### FOOTER ################################################### */
+
+/* ################################################### BTN ONTOP ################################################### */
+.scrollTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 10px 18px;
+    background-color: red;
+    color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+    opacity: 0;
+
+}
+
+/* RESPONSIVE BTN ONTOP */
+@media screen and (max-width:780px) {
+    .scrollTop {
+        left: 30px;
+        width: 54px;
+    }
+}
+/* RESPONSIVE BTN ONTOP */
+/* ################################################### BTN ONTOP ################################################### */
